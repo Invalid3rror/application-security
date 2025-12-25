@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Company MVP</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="identifier" placeholder="Name or Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="role" required>
+                <option value="member">Member</option>
+                <option value="admin">Admin</option>
+                <option value="logistic">Logistic</option>
+                <option value="merchant">Merchant</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+        <form id="otpForm" style="display: none;">
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button type="button" id="resendOtp">Resend OTP</button>
+            <button type="submit">Verify OTP</button>
+            <div id="countdown"></div>
+        </form>
+    </main>
+    <script src="js/frontend.js" defer></script>
+
+</body>
+</html>
